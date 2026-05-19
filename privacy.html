@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Tin Tức Chất Lượng</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --rule: #d4c9b8;
+    --bg: #faf8f4;
+    --accent: #c0392b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 60px 20px 100px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  .masthead {
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 0 20px;
+    margin-bottom: 48px;
+  }
+  .site-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 5vw, 38px);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .date {
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 44px 0 14px;
+    color: var(--ink);
+  }
+  h2::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--accent);
+    margin-bottom: 10px;
+  }
+  p { margin-bottom: 16px; font-size: 15px; color: #2a2a2a; }
+  ul { margin: 0 0 16px 20px; font-size: 15px; color: #2a2a2a; }
+  ul li { margin-bottom: 8px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 48px 0; }
+  .highlight-box {
+    background: #f0ece4;
+    border-left: 3px solid var(--accent);
+    padding: 20px 24px;
+    margin: 32px 0;
+    font-size: 14px;
+    font-style: italic;
+  }
+  .contact-block {
+    background: #f0ece4;
+    border-left: 3px solid var(--accent);
+    padding: 20px 24px;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <div class="site-name">Tin Tức Chất Lượng</div>
+    <h1>Privacy Policy</h1>
+    <div class="date">Effective: January 1, 2025 &nbsp;·&nbsp; Last updated: May 2025</div>
+  </div>
+
+  <div class="highlight-box">
+    This Application does not collect, sell, or share personal data from any user. It exists solely to post video content to the account owner's social media profiles via authorized APIs.
+  </div>
+
+  <h2>1. Who We Are</h2>
+  <p>Tin Tức Chất Lượng is a personal content automation project that publishes daily news summary videos to social media platforms including TikTok, YouTube, and Facebook. The Application is not a commercial product and is not made available to the general public.</p>
+
+  <h2>2. What Data We Access</h2>
+  <p>To function, the Application accesses the following through TikTok's official API:</p>
+  <ul>
+    <li>The account owner's TikTok <strong>Creator Info</strong> (display name, privacy level options, posting limits) — used solely to validate posting eligibility before each upload.</li>
+    <li>An OAuth <strong>access token</strong> and <strong>refresh token</strong> — used to authenticate API requests on behalf of the account owner.</li>
+  </ul>
+  <p>No data from TikTok users who view or interact with published content is ever collected, stored, or processed by this Application.</p>
+
+  <h2>3. What Data We Do Not Collect</h2>
+  <ul>
+    <li>No names, emails, or contact details of any individual</li>
+    <li>No browsing history, device identifiers, or IP addresses</li>
+    <li>No analytics or behavioral data from platform audiences</li>
+    <li>No data from minors or any third-party users</li>
+  </ul>
+
+  <h2>4. How Credentials Are Stored</h2>
+  <p>API credentials (client keys, secrets, and refresh tokens) are stored exclusively as encrypted secrets in GitHub Actions, the CI/CD environment used to run the Application. These values are never logged, printed, or transmitted to any service other than the official API endpoints of TikTok, YouTube, and Facebook.</p>
+
+  <h2>5. Data Sharing</h2>
+  <p>We do not sell, rent, lease, or otherwise share any data with any third party. The Application communicates only with the official API endpoints of the respective social media platforms.</p>
+
+  <h2>6. Cookies &amp; Tracking</h2>
+  <p>This Application is not a website and does not use cookies, tracking pixels, or any analytics tools. This policy page itself does not embed any tracking scripts.</p>
+
+  <h2>7. Your Rights</h2>
+  <p>As the Application does not collect personal data from any individual other than the account owner, there is no personal data subject to deletion, portability, or correction requests. If you have concerns about how TikTok handles your data as a platform user, please refer to <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" target="_blank">TikTok's Privacy Policy</a>.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>This Privacy Policy may be updated periodically. Any changes will be reflected on this page with an updated effective date.</p>
+
+  <hr>
+  <div class="contact-block">
+    <strong>Contact</strong><br>
+    For any privacy-related questions, please reach out via the Tin Tức Chất Lượng TikTok account inbox.
+  </div>
+</div>
+</body>
+</html>

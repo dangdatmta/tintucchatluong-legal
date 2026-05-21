@@ -3,143 +3,252 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Tin Tức Chất Lượng</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<title>Privacy Policy — VidGenn</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #1a1a1a;
-    --muted: #555;
-    --rule: #d4c9b8;
-    --bg: #faf8f4;
-    --accent: #c0392b;
+    --bg: #0d0d0f;
+    --surface: #18181c;
+    --border: #2a2a32;
+    --text: #e8e8f0;
+    --muted: #8888a0;
+    --accent: #a855f7;
+    --accent-glow: rgba(168,85,247,0.15);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     background: var(--bg);
-    color: var(--ink);
-    font-family: 'Source Serif 4', Georgia, serif;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
     font-weight: 300;
     line-height: 1.8;
-    padding: 60px 20px 100px;
+    padding: 0 20px 100px;
   }
-  .wrap { max-width: 680px; margin: 0 auto; }
-  .masthead {
-    border-top: 3px solid var(--ink);
-    border-bottom: 1px solid var(--rule);
-    padding: 24px 0 20px;
-    margin-bottom: 48px;
+  header {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 0 48px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 56px;
   }
-  .site-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 13px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 6px;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 32px;
+    text-decoration: none;
+  }
+  .logo-icon {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .logo-name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text);
   }
   h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(26px, 5vw, 38px);
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #e8e8f0 30%, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
-  .date {
-    margin-top: 10px;
-    font-size: 12px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
+  .meta { font-size: 13px; color: var(--muted); letter-spacing: 0.04em; }
+  .wrap { max-width: 720px; margin: 0 auto; }
   h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    font-size: 15px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin: 44px 0 14px;
-    color: var(--ink);
+    color: var(--accent);
+    margin: 48px 0 16px;
   }
-  h2::before {
-    content: '';
-    display: block;
-    width: 28px;
-    height: 2px;
-    background: var(--accent);
-    margin-bottom: 10px;
-  }
-  p { margin-bottom: 16px; font-size: 15px; color: #2a2a2a; }
-  ul { margin: 0 0 16px 20px; font-size: 15px; color: #2a2a2a; }
-  ul li { margin-bottom: 8px; }
-  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
-  hr { border: none; border-top: 1px solid var(--rule); margin: 48px 0; }
-  .highlight-box {
-    background: #f0ece4;
-    border-left: 3px solid var(--accent);
+  p { font-size: 15px; margin-bottom: 16px; color: #c8c8d8; }
+  ul { margin: 0 0 16px 20px; }
+  ul li { font-size: 15px; color: #c8c8d8; margin-bottom: 10px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+  .callout {
+    background: var(--accent-glow);
+    border: 1px solid rgba(168,85,247,0.3);
+    border-radius: 12px;
     padding: 20px 24px;
     margin: 32px 0;
     font-size: 14px;
-    font-style: italic;
+    color: #d8b4fe;
+    line-height: 1.7;
   }
-  .contact-block {
-    background: #f0ece4;
-    border-left: 3px solid var(--accent);
-    padding: 20px 24px;
-    margin-top: 40px;
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 28px;
     font-size: 14px;
   }
+  .data-table th {
+    text-align: left;
+    padding: 10px 16px;
+    background: var(--surface);
+    color: var(--muted);
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .data-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    color: #c8c8d8;
+    vertical-align: top;
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .badge {
+    display: inline-block;
+    background: rgba(168,85,247,0.2);
+    color: #d8b4fe;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-top: 48px;
+  }
+  .contact-box strong { color: var(--text); font-weight: 600; display: block; margin-bottom: 8px; }
+  .contact-box p { margin: 0; font-size: 14px; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="masthead">
-    <div class="site-name">Tin Tức Chất Lượng</div>
+  <header>
+    <a href="https://auto-gen-vid.vercel.app" class="logo">
+      <div class="logo-icon">🎬</div>
+      <span class="logo-name">VidGenn</span>
+    </a>
     <h1>Privacy Policy</h1>
-    <div class="date">Effective: January 1, 2025 &nbsp;·&nbsp; Last updated: May 2025</div>
-  </div>
+    <p class="meta">Effective date: May 1, 2025 &nbsp;·&nbsp; Last updated: May 21, 2026</p>
+  </header>
 
-  <div class="highlight-box">
-    This Application does not collect, sell, or share personal data from any user. It exists solely to post video content to the account owner's social media profiles via authorized APIs.
+  <div class="callout">
+    Your privacy matters to us. This policy explains what data VidGenn collects, why we collect it, and how we use and protect it. We do not sell your personal data.
   </div>
 
   <h2>1. Who We Are</h2>
-  <p>Tin Tức Chất Lượng is a personal content automation project that publishes daily news summary videos to social media platforms including TikTok, YouTube, and Facebook. The Application is not a commercial product and is not made available to the general public.</p>
+  <p>VidGenn is an AI-powered video generation and publishing platform available at <a href="https://auto-gen-vid.vercel.app">auto-gen-vid.vercel.app</a>. It allows content creators to create short-form video series and automatically publish them to social media platforms including TikTok, YouTube Shorts, and Instagram Reels.</p>
 
-  <h2>2. What Data We Access</h2>
-  <p>To function, the Application accesses the following through TikTok's official API:</p>
+  <h2>2. Data We Collect</h2>
+  <p>We collect only the data necessary to operate the platform:</p>
+
+  <table class="data-table">
+    <tr>
+      <th>Category</th>
+      <th>What we collect</th>
+      <th>Why</th>
+    </tr>
+    <tr>
+      <td><span class="badge">Account</span></td>
+      <td>Email address, name, profile photo (via OAuth login)</td>
+      <td>To create and manage your account</td>
+    </tr>
+    <tr>
+      <td><span class="badge">Billing</span></td>
+      <td>Payment method details (processed by Stripe — we do not store card numbers)</td>
+      <td>To manage subscriptions and credits</td>
+    </tr>
+    <tr>
+      <td><span class="badge">Social Auth</span></td>
+      <td>TikTok OAuth access token, refresh token, and basic creator info (username, avatar, privacy options)</td>
+      <td>To publish videos to your connected TikTok account on your behalf</td>
+    </tr>
+    <tr>
+      <td><span class="badge">Content</span></td>
+      <td>Series settings (niche, voice, style, captions), generated video files, publish schedules</td>
+      <td>To generate and deliver your video series</td>
+    </tr>
+    <tr>
+      <td><span class="badge">Usage</span></td>
+      <td>Feature interactions, credit usage, error logs</td>
+      <td>To improve the platform and debug issues</td>
+    </tr>
+  </table>
+
+  <h2>3. TikTok Integration — Specific Disclosures</h2>
+  <p>When you connect your TikTok account to VidGenn, we request the following permissions via TikTok's official API:</p>
   <ul>
-    <li>The account owner's TikTok <strong>Creator Info</strong> (display name, privacy level options, posting limits) — used solely to validate posting eligibility before each upload.</li>
-    <li>An OAuth <strong>access token</strong> and <strong>refresh token</strong> — used to authenticate API requests on behalf of the account owner.</li>
+    <li><strong>user.info.basic</strong> — to retrieve your TikTok display name, avatar, and posting eligibility, shown in your VidGenn dashboard</li>
+    <li><strong>video.upload</strong> — to upload generated video files to TikTok on your behalf</li>
+    <li><strong>video.publish</strong> — to publish uploaded videos to your TikTok profile according to your schedule</li>
   </ul>
-  <p>No data from TikTok users who view or interact with published content is ever collected, stored, or processed by this Application.</p>
+  <p>We store your TikTok OAuth tokens securely and use them solely to post content you have configured. We do not read, store, or analyze your TikTok followers, messages, or engagement data. You can disconnect your TikTok account at any time from VidGenn Settings.</p>
 
-  <h2>3. What Data We Do Not Collect</h2>
+  <h2>4. How We Use Your Data</h2>
   <ul>
-    <li>No names, emails, or contact details of any individual</li>
-    <li>No browsing history, device identifiers, or IP addresses</li>
-    <li>No analytics or behavioral data from platform audiences</li>
-    <li>No data from minors or any third-party users</li>
+    <li>To operate and deliver the VidGenn service</li>
+    <li>To authenticate you and manage your account</li>
+    <li>To generate AI video content based on your series configuration</li>
+    <li>To publish content to your connected social media accounts as scheduled</li>
+    <li>To process payments and manage your subscription</li>
+    <li>To send transactional emails (account, billing, and generation status notifications)</li>
+    <li>To improve platform performance and fix bugs</li>
   </ul>
-
-  <h2>4. How Credentials Are Stored</h2>
-  <p>API credentials (client keys, secrets, and refresh tokens) are stored exclusively as encrypted secrets in GitHub Actions, the CI/CD environment used to run the Application. These values are never logged, printed, or transmitted to any service other than the official API endpoints of TikTok, YouTube, and Facebook.</p>
+  <p>We do not use your data for advertising, profiling, or selling to third parties.</p>
 
   <h2>5. Data Sharing</h2>
-  <p>We do not sell, rent, lease, or otherwise share any data with any third party. The Application communicates only with the official API endpoints of the respective social media platforms.</p>
+  <p>We share your data only with the following categories of service providers, strictly to operate the platform:</p>
+  <ul>
+    <li><strong>TikTok, YouTube, Instagram</strong> — to publish content via their official APIs</li>
+    <li><strong>Stripe</strong> — for payment processing</li>
+    <li><strong>Vercel / cloud infrastructure</strong> — for hosting and storage</li>
+    <li><strong>AI generation services</strong> — to generate video content (data is not retained by these services beyond processing)</li>
+  </ul>
+  <p>We do not sell, rent, or broker your personal data to any third party.</p>
 
-  <h2>6. Cookies &amp; Tracking</h2>
-  <p>This Application is not a website and does not use cookies, tracking pixels, or any analytics tools. This policy page itself does not embed any tracking scripts.</p>
+  <h2>6. Data Retention</h2>
+  <p>We retain your account data for as long as your account is active. Generated video files are retained for a limited period (30 days) after generation, after which they are deleted from our servers unless you have explicitly saved them. You can request deletion of your account and associated data at any time.</p>
 
-  <h2>7. Your Rights</h2>
-  <p>As the Application does not collect personal data from any individual other than the account owner, there is no personal data subject to deletion, portability, or correction requests. If you have concerns about how TikTok handles your data as a platform user, please refer to <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" target="_blank">TikTok's Privacy Policy</a>.</p>
+  <h2>7. Security</h2>
+  <p>We implement industry-standard security measures including encrypted storage of OAuth tokens, HTTPS-only data transmission, and role-based access controls. No method of transmission over the internet is 100% secure; we encourage you to use a strong, unique password for your account.</p>
 
-  <h2>8. Changes to This Policy</h2>
-  <p>This Privacy Policy may be updated periodically. Any changes will be reflected on this page with an updated effective date.</p>
+  <h2>8. Your Rights</h2>
+  <p>Depending on your location, you may have the right to:</p>
+  <ul>
+    <li>Access the personal data we hold about you</li>
+    <li>Request correction of inaccurate data</li>
+    <li>Request deletion of your account and personal data</li>
+    <li>Object to or restrict certain processing activities</li>
+    <li>Receive a portable copy of your data</li>
+  </ul>
+  <p>To exercise any of these rights, contact us via our platform or the details below.</p>
 
-  <hr>
-  <div class="contact-block">
-    <strong>Contact</strong><br>
-    For any privacy-related questions, please reach out via the Tin Tức Chất Lượng TikTok account inbox.
+  <h2>9. Cookies</h2>
+  <p>VidGenn uses essential cookies required for authentication and session management. We do not use third-party advertising or tracking cookies. You can control cookies through your browser settings, though disabling essential cookies will affect platform functionality.</p>
+
+  <h2>10. Children's Privacy</h2>
+  <p>VidGenn is not directed at children under 18. We do not knowingly collect personal data from minors. If you believe a minor has created an account, please contact us and we will delete it promptly.</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy periodically. We will notify you of significant changes via email or in-app notification. Continued use of VidGenn after changes are posted constitutes acceptance of the updated policy.</p>
+
+  <hr class="divider">
+
+  <div class="contact-box">
+    <strong>Privacy questions or data requests?</strong>
+    <p>Contact us at <a href="https://auto-gen-vid.vercel.app">auto-gen-vid.vercel.app</a> via our in-app support chat. We respond to all privacy inquiries within 7 business days.</p>
   </div>
 </div>
 </body>

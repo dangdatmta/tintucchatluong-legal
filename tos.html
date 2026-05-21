@@ -3,117 +3,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service — Tin Tức Chất Lượng</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<title>Terms of Service — VidGenn</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #1a1a1a;
-    --muted: #555;
-    --rule: #d4c9b8;
-    --bg: #faf8f4;
-    --accent: #c0392b;
+    --bg: #0d0d0f;
+    --surface: #18181c;
+    --border: #2a2a32;
+    --text: #e8e8f0;
+    --muted: #8888a0;
+    --accent: #a855f7;
+    --accent-glow: rgba(168,85,247,0.15);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     background: var(--bg);
-    color: var(--ink);
-    font-family: 'Source Serif 4', Georgia, serif;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
     font-weight: 300;
     line-height: 1.8;
-    padding: 60px 20px 100px;
+    padding: 0 20px 100px;
   }
-  .wrap { max-width: 680px; margin: 0 auto; }
-  .masthead {
-    border-top: 3px solid var(--ink);
-    border-bottom: 1px solid var(--rule);
-    padding: 24px 0 20px;
-    margin-bottom: 48px;
+  header {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 0 48px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 56px;
   }
-  .site-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 13px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 6px;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 32px;
+    text-decoration: none;
+  }
+  .logo-icon {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .logo-name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text);
   }
   h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(26px, 5vw, 38px);
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #e8e8f0 30%, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
-  .date {
-    margin-top: 10px;
-    font-size: 12px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+  .meta {
+    font-size: 13px;
     color: var(--muted);
+    letter-spacing: 0.04em;
   }
+  .wrap { max-width: 720px; margin: 0 auto; }
   h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    font-size: 15px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin: 44px 0 14px;
-    color: var(--ink);
+    color: var(--accent);
+    margin: 48px 0 16px;
   }
-  h2::before {
-    content: '';
-    display: block;
-    width: 28px;
-    height: 2px;
-    background: var(--accent);
-    margin-bottom: 10px;
-  }
-  p { margin-bottom: 16px; font-size: 15px; color: #2a2a2a; }
-  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
-  hr { border: none; border-top: 1px solid var(--rule); margin: 48px 0; }
-  .contact-block {
-    background: #f0ece4;
-    border-left: 3px solid var(--accent);
+  p { font-size: 15px; margin-bottom: 16px; color: #c8c8d8; }
+  ul { margin: 0 0 16px 20px; }
+  ul li { font-size: 15px; color: #c8c8d8; margin-bottom: 10px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+  .callout {
+    background: var(--accent-glow);
+    border: 1px solid rgba(168,85,247,0.3);
+    border-radius: 12px;
     padding: 20px 24px;
-    margin-top: 40px;
+    margin: 32px 0;
     font-size: 14px;
+    color: #d8b4fe;
+    line-height: 1.7;
   }
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-top: 48px;
+  }
+  .contact-box strong { color: var(--text); font-weight: 600; display: block; margin-bottom: 8px; }
+  .contact-box p { margin: 0; font-size: 14px; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="masthead">
-    <div class="site-name">Tin Tức Chất Lượng</div>
+  <header>
+    <a href="https://auto-gen-vid.vercel.app" class="logo">
+      <div class="logo-icon">🎬</div>
+      <span class="logo-name">VidGenn</span>
+    </a>
     <h1>Terms of Service</h1>
-    <div class="date">Effective: January 1, 2025 &nbsp;·&nbsp; Last updated: May 2025</div>
+    <p class="meta">Effective date: May 1, 2025 &nbsp;·&nbsp; Last updated: May 21, 2026</p>
+  </header>
+
+  <div class="callout">
+    Please read these Terms carefully before using VidGenn. By creating an account or using any part of our platform, you agree to be bound by these Terms.
   </div>
 
-  <h2>1. Overview</h2>
-  <p>These Terms of Service govern your use of the Tin Tức Chất Lượng content automation tool ("the Application"), which automatically publishes daily news summary videos to social media platforms including TikTok on behalf of the account owner.</p>
-  <p>By using or authorizing this Application, you agree to these terms in full.</p>
+  <h2>1. About VidGenn</h2>
+  <p>VidGenn ("the Platform," "we," "us," or "our") is a software-as-a-service product available at <a href="https://auto-gen-vid.vercel.app">auto-gen-vid.vercel.app</a> that enables content creators to generate AI-powered short-form video series and automatically publish them to social media platforms including TikTok, YouTube Shorts, and Instagram Reels.</p>
+  <p>These Terms of Service ("Terms") govern your access to and use of VidGenn, including all features such as series creation, AI video generation, scheduling, social media publishing, and subscription billing.</p>
 
-  <h2>2. Scope of Use</h2>
-  <p>The Application is operated solely by and for the owner of the Tin Tức Chất Lượng social media accounts. It is not a public-facing product and does not offer services to third-party users.</p>
-  <p>The Application accesses TikTok's API exclusively to post video content to the authorized account and to read the minimum account information required for that purpose.</p>
+  <h2>2. Eligibility</h2>
+  <p>You must be at least 18 years old to use VidGenn. By using the Platform, you represent that you meet this requirement and have the legal capacity to enter into a binding agreement.</p>
 
-  <h2>3. Content</h2>
-  <p>All video content posted through the Application consists of news summaries generated by automated processes. Content is intended to be informational and is reviewed by the account owner before publication where applicable.</p>
-  <p>The Application does not post content on behalf of any third party and does not scrape or republish copyrighted material without permission.</p>
+  <h2>3. Account Registration</h2>
+  <p>To use VidGenn, you must create an account. You are responsible for:</p>
+  <ul>
+    <li>Providing accurate and current registration information</li>
+    <li>Maintaining the confidentiality of your account credentials</li>
+    <li>All activity that occurs under your account</li>
+  </ul>
+  <p>You must notify us immediately of any unauthorized use of your account.</p>
 
-  <h2>4. Third-Party Platforms</h2>
-  <p>Use of this Application in conjunction with TikTok is subject to <a href="https://www.tiktok.com/legal/page/global/terms-of-service/en" target="_blank">TikTok's Terms of Service</a> and Developer Platform Terms. The Application operates in compliance with those terms.</p>
+  <h2>4. Social Media Integrations</h2>
+  <p>VidGenn allows you to connect third-party social media accounts, including TikTok, to publish content on your behalf. By connecting a social media account, you:</p>
+  <ul>
+    <li>Grant VidGenn permission to post content to that account via its official API</li>
+    <li>Confirm that you own or are authorized to manage that account</li>
+    <li>Agree to comply with the terms of service of those third-party platforms</li>
+    <li>Acknowledge that VidGenn is not responsible for content policies enforced by those platforms</li>
+  </ul>
+  <p>You can revoke VidGenn's access to any connected account at any time through that platform's settings or through your VidGenn account settings.</p>
 
-  <h2>5. Data &amp; Privacy</h2>
-  <p>The Application does not collect, store, or transmit personal data from any individual other than the account owner. API credentials are stored securely as encrypted environment variables and are never shared with third parties.</p>
-  <p>Please refer to our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+  <h2>5. Content Ownership & Responsibility</h2>
+  <p>You retain ownership of all content generated and published through VidGenn using your account. You are solely responsible for ensuring that all published content complies with applicable laws and the community guidelines of destination platforms.</p>
+  <p>You agree not to use VidGenn to publish content that is:</p>
+  <ul>
+    <li>Unlawful, defamatory, harassing, or abusive</li>
+    <li>Infringing on third-party intellectual property rights</li>
+    <li>Deceptive, misleading, or constituting spam</li>
+    <li>In violation of any third-party platform's terms of service</li>
+  </ul>
 
-  <h2>6. Modifications</h2>
-  <p>These terms may be updated at any time. Continued use of the Application following any update constitutes acceptance of the revised terms.</p>
+  <h2>6. Subscriptions & Billing</h2>
+  <p>VidGenn offers free and paid subscription tiers. Paid plans are billed on a recurring basis (monthly or annually). By subscribing, you authorize us to charge your payment method on a recurring basis until you cancel.</p>
+  <p>You may cancel your subscription at any time from your account settings. Cancellation takes effect at the end of the current billing period; no partial refunds are issued for unused time unless required by applicable law.</p>
 
-  <hr>
-  <div class="contact-block">
-    <strong>Contact</strong><br>
-    For questions regarding these terms, please reach out via the Tin Tức Chất Lượng TikTok account inbox.
+  <h2>7. Credits System</h2>
+  <p>Certain features on VidGenn consume credits (e.g., video generation). Credits are non-transferable and have no cash value. Unused credits do not carry over between billing cycles unless stated otherwise in your plan.</p>
+
+  <h2>8. Prohibited Uses</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Reverse-engineer, decompile, or attempt to extract the source code of VidGenn</li>
+    <li>Use the Platform to generate or distribute spam, malware, or harmful content</li>
+    <li>Circumvent any access controls or rate limits</li>
+    <li>Resell or sublicense access to VidGenn without our written consent</li>
+    <li>Use automated scripts to access the Platform in a way that exceeds normal usage</li>
+  </ul>
+
+  <h2>9. Service Availability</h2>
+  <p>We aim to maintain high availability but do not guarantee uninterrupted access to VidGenn. We may suspend or modify the Platform at any time for maintenance, updates, or other operational reasons, and will endeavor to provide advance notice where practical.</p>
+
+  <h2>10. Disclaimer of Warranties</h2>
+  <p>VidGenn is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+
+  <h2>11. Limitation of Liability</h2>
+  <p>To the maximum extent permitted by law, VidGenn and its operators shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Platform, including loss of data, revenue, or business opportunities.</p>
+
+  <h2>12. Modifications to These Terms</h2>
+  <p>We may update these Terms from time to time. When we do, we will update the "Last updated" date above. Continued use of VidGenn after changes are posted constitutes acceptance of the revised Terms.</p>
+
+  <hr class="divider">
+
+  <div class="contact-box">
+    <strong>Questions about these Terms?</strong>
+    <p>Contact us at <a href="https://auto-gen-vid.vercel.app">auto-gen-vid.vercel.app</a> or via our in-app support chat. We're happy to help.</p>
   </div>
 </div>
 </body>
